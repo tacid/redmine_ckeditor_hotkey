@@ -1,0 +1,17 @@
+<% content_for :header_tags do %>
+<script type="text/javascript" charset="utf-8">
+jQuery(function(){
+  CKEDITOR.on( 'instanceReady', function( evt ) {
+     var editor = CKEDITOR.instances.issue_notes;
+     if (editor){
+       editor.on('key', function(ev) {
+         if (ev.data.keyCode == CKEDITOR.CTRL + 13) {
+           $('#issue-form').submit();
+           ev.cancel();
+         }
+       });
+     }
+  });
+});
+</script>
+<% end %>
