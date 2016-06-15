@@ -3,7 +3,7 @@ Redmine::Plugin.register :redmine_ckeditor_hotkey do
   author 'Tacid'
   description 'This plugin adds some hotkeys for CKEditor'
   url 'https://github.com/tacid/redmine_ckeditor_hotkey'
-  version '1.0.0'
+  version '1.0.1'
   author_url 'https://github.com/tacid'
 end
 
